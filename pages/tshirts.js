@@ -46,10 +46,10 @@ export async function getServerSideProps(context) {
   if (!mongoose.connections[0].readyState) {
     await mongoose.connect(process.env.MONGO_URI);
   }
-  let products = await Product.find({ category: 't-shirts' });
-  return {
-    props: { products: JSON.parse(JSON.stringify(products)) }, // will be passed to the page component as props
-  };
+  // use the Product model to find items with category 't-shirts'
+  
+  // return props: { products: JSON.parse(JSON.stringify(products)) }
+
 }
 
 export default Tshirts;

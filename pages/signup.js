@@ -9,17 +9,7 @@ const Signup = () => {
   }
 
   const handleFormSubmit = e => {
-    e.preventDefault()
-    fetch('/api/usersignup', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(form),
-    })
-      .then(res => res.json())
-      .then(data => console.log(data))
-      .catch(err => console.error(err))
+   // send info to api
   }
 
   return (
