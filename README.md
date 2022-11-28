@@ -1,7 +1,5 @@
 # Ecommerce Platform using NEXTJS and TAILWINDCSS
 
----
-
 <br/>
 <table align="center">
     <thead align="center">
@@ -16,20 +14,32 @@
      </thead>
     <tbody>
 
-![App Screenshot](Screenshot.png)
+![App Screenshot](screenshot1.png)
+![App Screenshot](screenshot2.png)
+![App Screenshot](screenshot3.png)
+![App Screenshot](screenshot4.png)
 
 To start MongoDB Server:
 
-```
-start: docker compose up
-stop: docker compose down
+```bash
+# to create and start Mongo container
+$ docker-compose up
+
+# to stop mongo docker container
+$ docker-compose down
+
+# to seed MongoDb with Fake data
+$ yarn seed
+# or
+$ npm run seed
+
 ```
 
 ## Tech Stack
 
-**Client:** NextJS, TailwindCSS
+**Frontend:** NextJS, TailwindCSS
 
-**Server:** MongoDB
+**Database:** MongoDB - Mongoose
 
 ## Contribution
 
